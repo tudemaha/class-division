@@ -50,4 +50,5 @@ with col2:
 
         with open('student_class.xlsx', 'rb') as excel:
             with col1:
+                st.write('Class division ready to download!')
                 st.download_button('Download', excel, 'Student Class.xlsx')
