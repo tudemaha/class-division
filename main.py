@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from numpy import array
 
 from normalize import *
 from clasification import *
