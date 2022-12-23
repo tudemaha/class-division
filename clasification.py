@@ -36,3 +36,14 @@ def assignClass(people_faculty, max_people):
                 current_class += 1
             else:
                 current_class = 0
+
+def assignMajor(people, major_count):
+
+    current_major = 0
+    for p in people:
+        p.append(class_list[current_major])
+
+        if current_major < major_count:
+            current_major += 1
+        else:
+            current_major = 0
