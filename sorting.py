@@ -1,10 +1,13 @@
 def buble_sort(data):
     count = len(data)
 
-    for i in range(count):
-        for j in range(0, count - i - 1):
-            if data[j][0] > data[j + 1][0]:
-                data[j], data[j + 1] = data[j + 1], data[j]
+    for i in range(1, count):
+        key = data[i]
+        j = i - 1
+        while j >= 0 and data[j] > key:
+            data[j + 1] = data[j]
+            j -= 1
+        data[j + 1] = key
 
 def sortPerFaculty(people_faculty):
     for pf in people_faculty:
